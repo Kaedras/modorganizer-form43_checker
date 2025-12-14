@@ -5,12 +5,22 @@
       "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "generator": "Visual Studio 17 2022",
       "name": "vs2022-windows"
+    },
+    {
+      "binaryDir": "${sourceDir}/build",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+      "generator": "Ninja Multi-Config",
+      "name": "linux"
     }
   ],
   "buildPresets": [
     {
       "name": "vs2022-windows",
       "configurePreset": "vs2022-windows"
+    },
+    {
+      "name": "linux",
+      "configurePreset": "linux"
     }
   ],
   "version": 4

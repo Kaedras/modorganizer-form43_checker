@@ -8,8 +8,8 @@
   "vcpkg-configuration": {
     "default-registry": {
       "kind": "git",
-      "repository": "https://github.com/ModOrganizer2/vcpkg-registry",
-      "baseline": "c55e3ab33eb170aefb1904ded8809cb88df6bb48"
+      "repository": "https://github.com/Kaedras/vcpkg-registry",
+      "baseline": "386e3fb7463f30e6d26c4cba8b411775267d5d08"
     }
   }
 }
