@@ -7,10 +7,30 @@
       "name": "vs2022-windows"
     },
     {
+      "cacheVariables": {
+        "VCPKG_MANIFEST_FEATURES": {
+          "type": "STRING",
+          "value": "standalone"
+        }
+      },
+      "inherits": "vs2022-windows",
+      "name": "vs2022-windows-standalone"
+    },
+    {
       "binaryDir": "${sourceDir}/build",
       "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "generator": "Ninja Multi-Config",
       "name": "linux"
+    },
+    {
+      "cacheVariables": {
+        "VCPKG_MANIFEST_FEATURES": {
+          "type": "STRING",
+          "value": "standalone"
+        }
+      },
+      "inherits": "linux",
+      "name": "linux-standalone"
     }
   ],
   "buildPresets": [
